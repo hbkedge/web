@@ -251,17 +251,38 @@ body {
     color: rgb(4, 3, 3);
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #e8e9f0, #e0dae5);
 }
 
 .stat-item h3 {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover h3 {
+    color: #667eea;
+    transform: scale(1.1);
 }
 
 .stat-item p {
     font-size: 14px;
     opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover p {
+    opacity: 1;
+    color: #555;
+    font-weight: 500;
 }
 
 .welcome-image {
